@@ -690,7 +690,7 @@
 
             <div class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">✉️</div>
-              <a href="mailto:felipempm@gmail.com">felipempm@gmail.com</a>
+              <a href="mailto:felipe@medeiros.info">felipe@medeiros.info</a>
             </div>
             <div class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">💬</div>
@@ -805,7 +805,7 @@
 
       No template do EmailJS use as variáveis:
         {{fullName}}, {{organization}}, {{email}}, {{engagementType}}, {{projectBrief}}
-      E defina o destinatário como: felipempm@gmail.com
+      E defina o destinatário como: felipe@medeiros.info
     */
 
     // Descomente a linha abaixo e adicione ao <head> após configurar:
@@ -866,14 +866,14 @@
           `Engagement Type: ${data.engagementType}\n\n` +
           `Project Brief:\n${data.projectBrief}`
         );
-        window.location.href = `mailto:felipempm@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:felipe@medeiros.info?subject=${subject}&body=${body}`;
 
         showMessage('success', '✅ Your email client has opened with the inquiry. Thank you, ' + data.fullName.split(' ')[0] + '!');
         form.reset();
 
       } catch (err) {
         console.error('EmailJS error:', err);
-        showMessage('error', 'Something went wrong. Please email felipempm@gmail.com directly.');
+        showMessage('error', 'Something went wrong. Please email felipe@medeiros.info directly.');
       } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Inquiry →';
