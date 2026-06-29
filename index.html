@@ -800,7 +800,7 @@
       Para ativar o envio real:
       1. Crie conta em https://emailjs.com (plano free: 200 emails/mês)
       2. Crie um Email Service, Email Template e copie os IDs
-      3. Substitua YOUR_PUBLIC_KEY, YOUR_SERVICE_ID e YOUR_TEMPLATE_ID abaixo
+      3. Substitua nEdeRmygu6g8ZRmzB, service_gw3ho4q e template_vid4lfj abaixo
       4. Descomente a tag <script> do EmailJS no <head>
 
       No template do EmailJS use as variáveis:
@@ -809,8 +809,8 @@
     */
 
     // Descomente a linha abaixo e adicione ao <head> após configurar:
-    // <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    // emailjs.init("YOUR_PUBLIC_KEY");
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    emailjs.init("nEdeRmygu6g8ZRmzB");
 
     const form       = document.getElementById('contactForm');
     const submitBtn  = document.getElementById('submitBtn');
@@ -855,7 +855,7 @@
 
       try {
         // ── OPÇÃO A: EmailJS (recomendado — descomente após configurar) ──
-        // await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data);
+        // await emailjs.send("service_gw3ho4q", "template_vid4lfj", data);
 
         // ── OPÇÃO B: Fallback via mailto (ativo por padrão) ──
         const subject = encodeURIComponent(`[MedeirosInfra] New Inquiry — ${data.engagementType}`);
