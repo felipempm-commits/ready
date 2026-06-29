@@ -10,6 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Validar formulário
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Obrigado! Sua mensagem foi enviada.');
+    alert('Thank you! Your message was sent.');
     this.reset();
 });
