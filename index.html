@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Felipe Medeiros | Independent AI-Ready & Secured Infrastructure Architect with 22+ years of experience in cloud, HPC, cybersecurity, and public sector architecture."
-  />
+
+  <!-- SEO -->
+  <meta name="description" content="Felipe Medeiros — Independent AI-Ready & Secured Infrastructure Architect. 22+ years delivering GPU clusters, HPC, hybrid cloud, and cyber-resilient architectures for government, financial, and research institutions." />
+  <meta name="keywords" content="AI infrastructure architect, HPC consultant, hybrid cloud, cybersecurity, FedRAMP, FISMA, GPU cluster, VMware, AWS, Azure, independent consultant" />
+  <meta name="author" content="Felipe Martins Palma de Medeiros" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Felipe Medeiros | AI-Ready & Secured Infrastructure Architect" />
+  <meta property="og:description" content="Independent consultant specializing in AI-Ready, Cyber-Resilient, and Hybrid Cloud infrastructure for government, financial, and research institutions." />
+  <meta property="og:url" content="https://palmainfra.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Felipe Medeiros | Infrastructure Architect" />
+  <meta name="twitter:description" content="AI-Ready & Secured Infrastructure — Independent Consultant." />
+
   <title>Felipe Medeiros | AI-Ready & Secured Infrastructure Architect</title>
+  <link rel="canonical" href="https://palmainfra.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -23,11 +39,10 @@
       --border: #e2e8f0;
       --radius: 12px;
       --shadow: 0 4px 24px rgba(0,0,0,.08);
+      --whatsapp: #25D366;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -36,603 +51,308 @@
       line-height: 1.7;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     /* ── NAV ── */
     nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      background: rgba(10,22,40,.95);
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10,22,40,.97);
       backdrop-filter: blur(10px);
       padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       height: 64px;
     }
-
     .nav-logo {
       color: var(--white);
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: .5px;
+      font-weight: 700; font-size: 1.1rem; letter-spacing: .5px;
     }
-
-    .nav-logo span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; }
     .nav-links a {
       color: rgba(255,255,255,.75);
-      text-decoration: none;
-      font-size: .875rem;
-      font-weight: 500;
+      text-decoration: none; font-size: .875rem; font-weight: 500;
       transition: color .2s;
     }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
     .nav-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: .25rem;
+      display: none; background: none; border: none; cursor: pointer; padding: .25rem;
     }
-
     .nav-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--white);
-      margin: 5px 0;
-      transition: .3s;
+      display: block; width: 24px; height: 2px;
+      background: var(--white); margin: 5px 0; transition: .3s;
     }
 
     /* ── HERO ── */
     #home {
       min-height: 100vh;
       background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, #0d2d5e 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 6rem 2rem 4rem;
-      position: relative;
-      overflow: hidden;
-      scroll-margin-top: 84px;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 7rem 1.5rem 4rem;
+      position: relative; overflow: hidden;
+      scroll-margin-top: 64px;
     }
-
     #home::before {
       content: '';
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300a8e8' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
-
-    .hero-content {
-      position: relative;
-      max-width: 800px;
-    }
-
+    .hero-content { position: relative; max-width: 800px; width: 100%; }
     .hero-badge {
       display: inline-block;
-      background: rgba(0,168,232,.15);
-      border: 1px solid rgba(0,168,232,.3);
-      color: var(--accent);
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: .35rem 1rem;
-      border-radius: 50px;
-      margin-bottom: 1.5rem;
+      background: rgba(0,168,232,.15); border: 1px solid rgba(0,168,232,.3);
+      color: var(--accent); font-size: .75rem; font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: .35rem 1rem; border-radius: 50px; margin-bottom: 1.5rem;
     }
-
     .hero-content h1 {
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.2;
-      margin-bottom: 1rem;
+      font-size: clamp(1.9rem, 5vw, 3.25rem);
+      font-weight: 700; color: var(--white);
+      line-height: 1.2; margin-bottom: 1rem;
     }
-
-    .hero-content h1 span {
-      color: var(--accent);
-    }
-
+    .hero-content h1 span { color: var(--accent); }
     .hero-sub {
-      font-size: 1.1rem;
+      font-size: clamp(.95rem, 2vw, 1.1rem);
       color: rgba(255,255,255,.7);
-      max-width: 620px;
-      margin: 0 auto 2rem;
+      max-width: 620px; margin: 0 auto 2rem;
     }
-
     .hero-stats {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      flex-wrap: wrap;
-      margin-top: 2.5rem;
+      display: flex; justify-content: center; gap: 2rem;
+      flex-wrap: wrap; margin-top: 2.5rem;
     }
-
-    .stat {
-      text-align: center;
-    }
-
-    .stat-num {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent);
-      display: block;
-    }
-
-    .stat-label {
-      font-size: .75rem;
-      color: rgba(255,255,255,.55);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
+    .stat { text-align: center; min-width: 100px; }
+    .stat-num { font-size: clamp(1.5rem,3vw,2rem); font-weight: 700; color: var(--accent); display: block; }
+    .stat-label { font-size: .72rem; color: rgba(255,255,255,.55); text-transform: uppercase; letter-spacing: 1px; }
     .hero-cta {
-      display: inline-block;
-      margin-top: 2.5rem;
-      background: var(--accent);
-      color: var(--white);
-      padding: .85rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: .95rem;
+      display: inline-block; margin-top: 2.5rem;
+      background: var(--accent); color: var(--white);
+      padding: .9rem 2rem; border-radius: 8px;
+      text-decoration: none; font-weight: 600; font-size: .95rem;
       transition: transform .2s, box-shadow .2s;
     }
-
     .hero-cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,168,232,.35);
+      box-shadow: 0 8px 24px rgba(0,168,232,.4);
       text-decoration: none;
     }
 
     /* ── SECTIONS ── */
-    section {
-      padding: 5rem 2rem;
-      scroll-margin-top: 84px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
+    section { padding: 5rem 1.5rem; scroll-margin-top: 64px; }
+    .container { max-width: 1100px; margin: 0 auto; }
     .section-label {
-      font-size: .75rem;
-      font-weight: 600;
-      color: var(--accent);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: .5rem;
+      font-size: .75rem; font-weight: 600; color: var(--accent);
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: .5rem;
     }
-
     .section-title {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 1rem;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700; color: var(--navy); margin-bottom: 1rem;
     }
+    .section-desc { color: var(--muted); max-width: 640px; margin-bottom: 3rem; font-size: .975rem; }
 
-    .section-desc {
-      color: var(--muted);
-      max-width: 640px;
-      margin-bottom: 3rem;
-      font-size: .975rem;
-    }
-
-    /* ── EXPERTISE GRID ── */
-    #expertise {
-      background: var(--white);
-    }
-
+    /* ── EXPERTISE ── */
+    #expertise { background: var(--white); }
     .expertise-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       gap: 1.5rem;
     }
-
     .expertise-card {
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.75rem;
+      background: var(--light); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
       transition: transform .2s, box-shadow .2s;
     }
-
-    .expertise-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow);
-    }
-
+    .expertise-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
     .card-icon {
-      width: 48px;
-      height: 48px;
+      width: 48px; height: 48px;
       background: linear-gradient(135deg, var(--accent), var(--blue));
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
+      border-radius: 10px; display: flex; align-items: center;
+      justify-content: center; font-size: 1.4rem; margin-bottom: 1rem;
     }
-
-    .expertise-card h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: .5rem;
-    }
-
-    .expertise-card p {
-      font-size: .875rem;
-      color: var(--muted);
-    }
+    .expertise-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; }
+    .expertise-card p { font-size: .875rem; color: var(--muted); }
 
     /* ── PROJECTS ── */
-    #projects {
-      background: var(--light);
-    }
-
+    #projects { background: var(--light); }
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
     }
-
     .project-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      box-shadow: var(--shadow);
-      transition: transform .2s;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
+      box-shadow: var(--shadow); transition: transform .2s;
     }
-
-    .project-card:hover {
-      transform: translateY(-3px);
-    }
-
+    .project-card:hover { transform: translateY(-3px); }
     .project-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 1rem;
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 1rem; margin-bottom: 1rem;
     }
-
     .project-sector {
-      font-size: .7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--accent);
-      background: rgba(0,168,232,.08);
-      padding: .25rem .65rem;
-      border-radius: 50px;
+      font-size: .7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--accent);
+      background: rgba(0,168,232,.08); padding: .25rem .65rem; border-radius: 50px;
     }
-
-    .project-value {
-      font-size: .8rem;
-      font-weight: 700;
-      color: var(--navy);
-      white-space: nowrap;
-    }
-
-    .project-card h3 {
-      font-size: .975rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: .5rem;
-    }
-
-    .project-card p {
-      font-size: .85rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    .project-metrics {
-      display: flex;
-      gap: .75rem;
-      flex-wrap: wrap;
-    }
-
+    .project-value { font-size: .8rem; font-weight: 700; color: var(--navy); white-space: nowrap; }
+    .project-card h3 { font-size: .975rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; }
+    .project-card p { font-size: .85rem; color: var(--muted); margin-bottom: 1rem; }
+    .project-metrics { display: flex; gap: .75rem; flex-wrap: wrap; }
     .metric-tag {
-      font-size: .72rem;
-      font-weight: 600;
-      background: var(--light);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: .2rem .6rem;
-      border-radius: 6px;
+      font-size: .72rem; font-weight: 600;
+      background: var(--light); border: 1px solid var(--border);
+      color: var(--text); padding: .2rem .6rem; border-radius: 6px;
     }
 
     /* ── CERTIFICATIONS ── */
-    #certifications {
-      background: var(--white);
-    }
-
+    #certifications { background: var(--white); }
     .cert-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1rem;
     }
-
     .cert-card {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
+      display: flex; align-items: center; gap: 1rem;
+      background: var(--light); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1rem 1.25rem;
       transition: border-color .2s;
     }
-
-    .cert-card:hover {
-      border-color: var(--accent);
-    }
-
+    .cert-card:hover { border-color: var(--accent); }
     .cert-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
+      width: 40px; height: 40px; border-radius: 8px;
       background: linear-gradient(135deg, var(--navy), var(--blue));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
     }
-
-    .cert-name {
-      font-size: .85rem;
-      font-weight: 600;
-      color: var(--navy);
-    }
-
-    .cert-issuer {
-      font-size: .75rem;
-      color: var(--muted);
-    }
+    .cert-name { font-size: .85rem; font-weight: 600; color: var(--navy); }
+    .cert-issuer { font-size: .75rem; color: var(--muted); }
 
     /* ── IMPACT ── */
     #impact {
       background: linear-gradient(135deg, var(--navy), var(--blue));
       color: var(--white);
     }
-
-    #impact .section-title {
-      color: var(--white);
-    }
-
-    #impact .section-desc {
-      color: rgba(255,255,255,.6);
-    }
-
+    #impact .section-title { color: var(--white); }
+    #impact .section-desc { color: rgba(255,255,255,.6); }
     .impact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.25rem;
     }
-
     .impact-card {
       text-align: center;
       background: rgba(255,255,255,.06);
       border: 1px solid rgba(255,255,255,.1);
-      border-radius: var(--radius);
-      padding: 2rem 1rem;
+      border-radius: var(--radius); padding: 1.75rem 1rem;
     }
-
-    .impact-num {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--accent);
-      display: block;
-      margin-bottom: .25rem;
-    }
-
-    .impact-label {
-      font-size: .8rem;
-      color: rgba(255,255,255,.55);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+    .impact-num { font-size: 2rem; font-weight: 700; color: var(--accent); display: block; margin-bottom: .25rem; }
+    .impact-label { font-size: .78rem; color: rgba(255,255,255,.55); text-transform: uppercase; letter-spacing: 1px; }
 
     /* ── CONTACT ── */
-    #contact {
-      background: var(--light);
-    }
-
+    #contact { background: var(--light); }
     .contact-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: start;
+      gap: 3rem; align-items: start;
     }
-
-    .contact-info h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 1rem;
-    }
-
-    .contact-info p {
-      color: var(--muted);
-      font-size: .9rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      margin-bottom: .75rem;
-    }
-
+    .contact-info h3 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
+    .contact-info p { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
+    .contact-item { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
     .contact-item-icon {
-      width: 36px;
-      height: 36px;
-      background: rgba(0,168,232,.1);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      flex-shrink: 0;
+      width: 36px; height: 36px; background: rgba(0,168,232,.1);
+      border-radius: 8px; display: flex; align-items: center;
+      justify-content: center; font-size: 1rem; flex-shrink: 0;
     }
-
-    .contact-item a,
-    .contact-item span {
-      font-size: .875rem;
-      color: var(--text);
-    }
-
-    .contact-item a {
-      text-decoration: none;
-    }
-
-    .contact-item a:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
+    .contact-item a, .contact-item span { font-size: .875rem; color: var(--text); }
+    .contact-item a { text-decoration: none; }
+    .contact-item a:hover { color: var(--accent); text-decoration: underline; }
 
     .contact-form {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      box-shadow: var(--shadow);
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow);
     }
-
-    .form-group {
-      margin-bottom: 1.25rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: .8rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: .4rem;
-    }
-
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-size: .8rem; font-weight: 600; color: var(--navy); margin-bottom: .4rem; }
     .form-group input,
     .form-group textarea,
     .form-group select {
-      width: 100%;
-      padding: .75rem 1rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-family: 'Inter', sans-serif;
-      font-size: .875rem;
-      color: var(--text);
-      background: var(--light);
-      transition: border-color .2s;
-      outline: none;
+      width: 100%; padding: .75rem 1rem;
+      border: 1px solid var(--border); border-radius: 8px;
+      font-family: 'Inter', sans-serif; font-size: .875rem;
+      color: var(--text); background: var(--light);
+      transition: border-color .2s; outline: none;
     }
-
     .form-group input:focus,
     .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--accent);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
+    .form-group select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,168,232,.1); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
 
     .btn-submit {
-      width: 100%;
-      padding: .875rem;
-      background: var(--accent);
-      color: var(--white);
-      border: none;
-      border-radius: 8px;
-      font-size: .95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background .2s, transform .2s;
+      width: 100%; padding: .9rem;
+      background: var(--accent); color: var(--white);
+      border: none; border-radius: 8px;
+      font-size: .95rem; font-weight: 600;
+      cursor: pointer; transition: background .2s, transform .2s;
+      font-family: 'Inter', sans-serif;
     }
+    .btn-submit:hover { background: #0090cc; transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 
-    .btn-submit:hover {
-      background: #0090cc;
-      transform: translateY(-1px);
+    .form-message {
+      display: none; margin-top: 1rem; padding: .85rem 1rem;
+      border-radius: 8px; font-size: .875rem; font-weight: 500; text-align: center;
     }
+    .form-message.success { background: #e6f9f0; color: #15803d; border: 1px solid #bbf7d0; display: block; }
+    .form-message.error   { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; display: block; }
+
+    /* ── WHATSAPP FLOAT ── */
+    .whatsapp-float {
+      position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 999;
+      width: 56px; height: 56px;
+      background: var(--whatsapp); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,.45);
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 24px rgba(37,211,102,.6);
+      text-decoration: none;
+    }
+    .whatsapp-float svg { width: 30px; height: 30px; fill: #ffffff; }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--navy);
-      color: rgba(255,255,255,.45);
-      text-align: center;
-      padding: 1.75rem 2rem;
-      font-size: .8rem;
+      background: var(--navy); color: rgba(255,255,255,.45);
+      text-align: center; padding: 1.75rem 2rem; font-size: .8rem;
     }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
 
     /* ── MOBILE ── */
     @media (max-width: 768px) {
       .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
+        display: none; flex-direction: column; gap: 1rem;
+        position: absolute; top: 64px; left: 0; width: 100%;
+        background: rgba(10,22,40,.98); padding: 1.5rem 2rem;
+        border-top: 1px solid rgba(255,255,255,.08);
       }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: block; }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.25rem; }
+      .impact-grid { grid-template-columns: repeat(2, 1fr); }
+      .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 50px; height: 50px; }
+      .whatsapp-float svg { width: 26px; height: 26px; }
+    }
 
-      .nav-links.open {
-        display: flex;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        background: var(--navy);
-        padding: 1.5rem 2rem;
-      }
-
-      .nav-toggle {
-        display: block;
-      }
-
-      .hero-stats {
-        gap: 1.5rem;
-      }
-
-      .contact-wrapper {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 480px) {
+      nav { padding: 0 1rem; }
+      section { padding: 3.5rem 1rem; }
+      .contact-form { padding: 1.5rem; }
+      .projects-grid, .expertise-grid { grid-template-columns: 1fr; }
+      .cert-grid { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -641,8 +361,7 @@
   <!-- NAV -->
   <nav>
     <div class="nav-logo">Palma<span>Infra</span></div>
-
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#home">Home</a></li>
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -650,8 +369,7 @@
       <li><a href="#impact">Impact</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-
-    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -659,8 +377,9 @@
   </nav>
 
   <main>
+
     <!-- HERO -->
-    <section id="home">
+    <section id="home" aria-label="Introduction">
       <div class="hero-content">
         <div class="hero-badge">Independent Consultant · AI-Ready & Secured Infrastructure</div>
         <h1>Felipe Medeiros<br><span>Infrastructure Architect</span></h1>
@@ -668,7 +387,6 @@
           Senior Systems Engineer specializing in AI-Ready, Cyber-Resilient, and Hybrid Cloud
           infrastructure for government agencies, financial institutions, and research organizations.
         </p>
-
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-num">22+</span>
@@ -679,15 +397,14 @@
             <span class="stat-label">Architected Solutions</span>
           </div>
           <div class="stat">
-            <span class="stat-num">107%</span>
-            <span class="stat-label">Global Quota Attainment</span>
-          </div>
-          <div class="stat">
             <span class="stat-num">6</span>
             <span class="stat-label">Critical Sectors Served</span>
           </div>
+          <div class="stat">
+            <span class="stat-num">20M+</span>
+            <span class="stat-label">Citizens Impacted</span>
+          </div>
         </div>
-
         <a href="#contact" class="hero-cta">Engage as Independent Consultant →</a>
       </div>
     </section>
@@ -701,38 +418,32 @@
           Cross-domain specialization across the full AI infrastructure stack — from GPU compute
           to data sovereignty and cyber resilience — for regulated and mission-critical environments.
         </p>
-
         <div class="expertise-grid">
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">🤖</div>
             <h3>AI-Ready Infrastructure</h3>
             <p>GPU-accelerated compute clusters, Kubernetes orchestration, NVMe storage, and AI model lifecycle management for production-grade workloads.</p>
           </div>
-
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">🔬</div>
             <h3>High-Performance Computing</h3>
             <p>HPC cluster design with high-bandwidth interconnects and petabyte-scale storage for genomics, epidemiological modeling, and scientific research pipelines.</p>
           </div>
-
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">☁️</div>
             <h3>Hybrid Cloud Modernization</h3>
             <p>Private cloud architecture (VMware Cloud Foundation), dual-site active-active design, workload migration, and AWS/Azure hybrid integration.</p>
           </div>
-
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">🛡️</div>
             <h3>Cyber-Resilient Data Protection</h3>
             <p>Immutable storage vaults, air-gapped replication, ransomware-proof architectures, and automated backup orchestration for regulated sectors.</p>
           </div>
-
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">🏛️</div>
             <h3>Public Sector & Compliance</h3>
             <p>Infrastructure design aligned with NIST AI RMF, FedRAMP, FISMA-High, and sector-specific regulatory requirements for government and financial institutions.</p>
           </div>
-
           <div class="expertise-card">
             <div class="card-icon" aria-hidden="true">🏗️</div>
             <h3>Solution Architecture & Leadership</h3>
@@ -751,8 +462,8 @@
           Production-grade implementations across six critical sectors, each delivered through
           formal competitive procurement and fully integrated with existing institutional systems.
         </p>
-
         <div class="projects-grid">
+
           <div class="project-card">
             <div class="project-header">
               <span class="project-sector">Justice / Public Sector</span>
@@ -836,6 +547,7 @@
               <span class="metric-tag">Multi-agency</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -849,7 +561,6 @@
           A rare cross-domain portfolio spanning AI infrastructure, cloud architecture,
           data protection, and virtualization — each credential verified by its issuing organization.
         </p>
-
         <div class="cert-grid">
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🟢</div>
@@ -858,7 +569,6 @@
               <div class="cert-issuer">NVIDIA Corporation</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🟠</div>
             <div>
@@ -866,7 +576,6 @@
               <div class="cert-issuer">Amazon Web Services</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🔵</div>
             <div>
@@ -874,7 +583,6 @@
               <div class="cert-issuer">Microsoft</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">⚫</div>
             <div>
@@ -882,7 +590,6 @@
               <div class="cert-issuer">VMware by Broadcom</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🟤</div>
             <div>
@@ -890,7 +597,6 @@
               <div class="cert-issuer">Dell Technologies</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🔷</div>
             <div>
@@ -898,7 +604,6 @@
               <div class="cert-issuer">NetApp</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🟣</div>
             <div>
@@ -906,7 +611,6 @@
               <div class="cert-issuer">Veeam Software</div>
             </div>
           </div>
-
           <div class="cert-card">
             <div class="cert-icon" aria-hidden="true">🟡</div>
             <div>
@@ -927,7 +631,6 @@
           Quantified outcomes across six sectors, delivered through formal competitive
           procurement and verified by institutional stakeholders.
         </p>
-
         <div class="impact-grid">
           <div class="impact-card">
             <span class="impact-num">$62M+</span>
@@ -935,11 +638,7 @@
           </div>
           <div class="impact-card">
             <span class="impact-num">22+</span>
-            <span class="impact-label">Years Progressive Experience</span>
-          </div>
-          <div class="impact-card">
-            <span class="impact-num">107%</span>
-            <span class="impact-label">Global Quota Attainment</span>
+            <span class="impact-label">Years Experience</span>
           </div>
           <div class="impact-card">
             <span class="impact-num">21K+</span>
@@ -947,19 +646,23 @@
           </div>
           <div class="impact-card">
             <span class="impact-num">2,500+</span>
-            <span class="impact-label">Virtual Machines Managed</span>
+            <span class="impact-label">Virtual Machines</span>
           </div>
           <div class="impact-card">
             <span class="impact-num">80%</span>
-            <span class="impact-label">RTO Reduction Achieved</span>
+            <span class="impact-label">RTO Reduction</span>
           </div>
           <div class="impact-card">
-            <span class="impact-num">20M</span>
+            <span class="impact-num">20M+</span>
             <span class="impact-label">Citizens Impacted</span>
           </div>
           <div class="impact-card">
             <span class="impact-num">6</span>
-            <span class="impact-label">Critical Sectors Served</span>
+            <span class="impact-label">Critical Sectors</span>
+          </div>
+          <div class="impact-card">
+            <span class="impact-num">99.99%</span>
+            <span class="impact-label">Uptime Delivered</span>
           </div>
         </div>
       </div>
@@ -970,8 +673,8 @@
       <div class="container">
         <p class="section-label">Get in Touch</p>
         <h2 class="section-title">Independent Consulting Engagement</h2>
-
         <div class="contact-wrapper">
+
           <div class="contact-info">
             <h3>Open to Project-Based Engagements</h3>
             <p>
@@ -987,16 +690,20 @@
 
             <div class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">✉️</div>
-              <a href="mailto:felipe@palmainfra.com">felipe@palmainfra.com</a>
+              <a href="mailto:felipempm@gmail.com">felipempm@gmail.com</a>
             </div>
-
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">💬</div>
+              <a href="https://wa.me/5548996560785" target="_blank" rel="noopener noreferrer">
+                WhatsApp: +55 48 99656-0785
+              </a>
+            </div>
             <div class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">💼</div>
-              <a href="https://linkedin.com/in/felipempm" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/felipempm/" target="_blank" rel="noopener noreferrer">
                 linkedin.com/in/felipempm
               </a>
             </div>
-
             <div class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">📍</div>
               <span>Available for U.S. East Coast engagements</span>
@@ -1004,46 +711,21 @@
           </div>
 
           <div class="contact-form">
-            <!-- Substitua o action pelo endpoint real do seu formulário -->
-            <form action="https://formspree.io/f/SEU_ID" method="POST">
+            <form id="contactForm" novalidate>
               <div class="form-group">
-                <label for="fullName">Full Name</label>
-                <input
-                  type="text"
-                  id="fullName"
-                  name="fullName"
-                  placeholder="Your name"
-                  autocomplete="name"
-                  required
-                />
+                <label for="fullName">Full Name <span aria-hidden="true" style="color:#e53e3e">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your name" autocomplete="name" required />
               </div>
-
               <div class="form-group">
-                <label for="organization">Organization</label>
-                <input
-                  type="text"
-                  id="organization"
-                  name="organization"
-                  placeholder="Company or agency name"
-                  autocomplete="organization"
-                  required
-                />
+                <label for="organization">Organization <span aria-hidden="true" style="color:#e53e3e">*</span></label>
+                <input type="text" id="organization" name="organization" placeholder="Company or agency name" autocomplete="organization" required />
               </div>
-
               <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  autocomplete="email"
-                  required
-                />
+                <label for="email">Email <span aria-hidden="true" style="color:#e53e3e">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required />
               </div>
-
               <div class="form-group">
-                <label for="engagementType">Engagement Type</label>
+                <label for="engagementType">Engagement Type <span aria-hidden="true" style="color:#e53e3e">*</span></label>
                 <select id="engagementType" name="engagementType" required>
                   <option value="" selected disabled>Select an area...</option>
                   <option value="AI-Ready Infrastructure Design">AI-Ready Infrastructure Design</option>
@@ -1054,23 +736,19 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
-
               <div class="form-group">
-                <label for="projectBrief">Project Brief</label>
-                <textarea
-                  id="projectBrief"
-                  name="projectBrief"
-                  placeholder="Describe your infrastructure challenge or project scope..."
-                  required
-                ></textarea>
+                <label for="projectBrief">Project Brief <span aria-hidden="true" style="color:#e53e3e">*</span></label>
+                <textarea id="projectBrief" name="projectBrief" placeholder="Describe your infrastructure challenge or project scope..." required></textarea>
               </div>
-
-              <button type="submit" class="btn-submit">Send Inquiry →</button>
+              <button type="submit" class="btn-submit" id="submitBtn">Send Inquiry →</button>
+              <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
             </form>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -1080,25 +758,127 @@
       <a href="#home">Home</a> &nbsp;·&nbsp;
       <a href="#expertise">Expertise</a> &nbsp;·&nbsp;
       <a href="#projects">Projects</a> &nbsp;·&nbsp;
-      <a href="#contact">Contact</a>
+      <a href="#contact">Contact</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/felipempm/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   </footer>
 
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <a
+    href="https://wa.me/5548996560785?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20consulting%20engagement."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact on WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
   <script>
+    /* ── NAV TOGGLE ── */
     const toggle = document.getElementById('navToggle');
-    const links = document.getElementById('navLinks');
+    const links  = document.getElementById('navLinks');
 
     toggle.addEventListener('click', () => {
       const isOpen = links.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     });
 
     links.querySelectorAll('a').forEach(a =>
       a.addEventListener('click', () => {
         links.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
       })
     );
+
+    /* ── CONTACT FORM — EmailJS (sem backend) ── */
+    /*
+      Para ativar o envio real:
+      1. Crie conta em https://emailjs.com (plano free: 200 emails/mês)
+      2. Crie um Email Service, Email Template e copie os IDs
+      3. Substitua YOUR_PUBLIC_KEY, YOUR_SERVICE_ID e YOUR_TEMPLATE_ID abaixo
+      4. Descomente a tag <script> do EmailJS no <head>
+
+      No template do EmailJS use as variáveis:
+        {{fullName}}, {{organization}}, {{email}}, {{engagementType}}, {{projectBrief}}
+      E defina o destinatário como: felipempm@gmail.com
+    */
+
+    // Descomente a linha abaixo e adicione ao <head> após configurar:
+    // <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    // emailjs.init("YOUR_PUBLIC_KEY");
+
+    const form       = document.getElementById('contactForm');
+    const submitBtn  = document.getElementById('submitBtn');
+    const msgBox     = document.getElementById('formMessage');
+
+    function showMessage(type, text) {
+      msgBox.className = 'form-message ' + type;
+      msgBox.textContent = text;
+      msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function validateForm(data) {
+      if (!data.fullName.trim())       return 'Please enter your full name.';
+      if (!data.organization.trim())   return 'Please enter your organization.';
+      if (!data.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
+                                        return 'Please enter a valid email address.';
+      if (!data.engagementType)         return 'Please select an engagement type.';
+      if (!data.projectBrief.trim())    return 'Please describe your project.';
+      return null;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const data = {
+        fullName:       document.getElementById('fullName').value,
+        organization:   document.getElementById('organization').value,
+        email:          document.getElementById('email').value,
+        engagementType: document.getElementById('engagementType').value,
+        projectBrief:   document.getElementById('projectBrief').value,
+      };
+
+      const validationError = validateForm(data);
+      if (validationError) {
+        showMessage('error', validationError);
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      msgBox.className = 'form-message';
+
+      try {
+        // ── OPÇÃO A: EmailJS (recomendado — descomente após configurar) ──
+        // await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data);
+
+        // ── OPÇÃO B: Fallback via mailto (ativo por padrão) ──
+        const subject = encodeURIComponent(`[PalmaInfra] New Inquiry — ${data.engagementType}`);
+        const body = encodeURIComponent(
+          `Name: ${data.fullName}\n` +
+          `Organization: ${data.organization}\n` +
+          `Email: ${data.email}\n` +
+          `Engagement Type: ${data.engagementType}\n\n` +
+          `Project Brief:\n${data.projectBrief}`
+        );
+        window.location.href = `mailto:felipempm@gmail.com?subject=${subject}&body=${body}`;
+
+        showMessage('success', '✅ Your email client has opened with the inquiry. Thank you, ' + data.fullName.split(' ')[0] + '!');
+        form.reset();
+
+      } catch (err) {
+        console.error('EmailJS error:', err);
+        showMessage('error', 'Something went wrong. Please email felipempm@gmail.com directly.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Inquiry →';
+      }
+    });
   </script>
 
 </body>
