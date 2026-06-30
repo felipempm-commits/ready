@@ -854,7 +854,7 @@
         // ── OPÇÃO A: EmailJS (recomendado — descomente após configurar) ──
         await emailjs.send("service_gw3ho4q", "template_vid4lfj", data);
 
-        showMessage('success', '✅ Your email client has opened with the inquiry. Thank you, ' + data.fullName.split(' ')[0] + '!');
+        showMessage('success', '✅ Your email has been sent. Thank you, ' + data.fullName.split(' ')[0] + '!');
         form.reset();
 
       } catch (err) {
