@@ -354,6 +354,8 @@
       .cert-grid { grid-template-columns: 1fr; }
       .impact-grid { grid-template-columns: repeat(2, 1fr); }
     }
+    
+  </style>
 
     <script
   type="text/javascript"
@@ -364,9 +366,7 @@
     emailjs.init({ publicKey: "nEdeRmygu6g8ZRmzB" });
   })();
 </script>
-        }
-    
-  </style>
+  
 </head>
 <body>
 
@@ -853,17 +853,6 @@
       try {
         // ── OPÇÃO A: EmailJS (recomendado — descomente após configurar) ──
         await emailjs.send("service_gw3ho4q", "template_vid4lfj", data);
-
-        // ── OPÇÃO B: Fallback via mailto (ativo por padrão) ──
-        const subject = encodeURIComponent(`[MedeirosInfra] New Inquiry — ${data.engagementType}`);
-        const body = encodeURIComponent(
-          `Name: ${data.fullName}\n` +
-          `Organization: ${data.organization}\n` +
-          `Email: ${data.email}\n` +
-          `Engagement Type: ${data.engagementType}\n\n` +
-          `Project Brief:\n${data.projectBrief}`
-        );
-        window.location.href = `mailto:felipe@medeiros.info?subject=${subject}&body=${body}`;
 
         showMessage('success', '✅ Your email client has opened with the inquiry. Thank you, ' + data.fullName.split(' ')[0] + '!');
         form.reset();
